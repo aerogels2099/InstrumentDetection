@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* fadeInUp: used via arbitrary Tailwind value [animation:fadeInUp_0.4s_ease_forwards] */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

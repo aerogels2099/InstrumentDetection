@@ -1,28 +1,23 @@
-# Claude Code session files
-.claude/
-
-# VS Code workspace files
-.vscode/
-.vs/
-
 # Python
 *.pyc
 __pycache__/
 *.pyo
 *.pyd
-.venv/
+
+# Virtual environment
 venv/
 .env
 
 # Data files
 data/
 
+# Model checkpoints (too large for GitHub — run training to generate)
+*.pth
+
 # IDEs
+.vscode/
 .idea/
 
 # Node / frontend build
 frontend/node_modules/
 frontend/build/
-
-# Misc
-test.py

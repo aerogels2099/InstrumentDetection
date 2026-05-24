@@ -1,0 +1,50 @@
+# ============================================================
+# Instrument Detection — Full Project Setup
+# ============================================================
+#
+# BACKEND (Python)
+# ----------------
+# Requires Python 3.10+
+#
+#   cd instrument-detection
+#   python -m venv backend/venv
+#   backend\venv\Scripts\activate        # Windows
+#   source backend/venv/bin/activate     # macOS / Linux
+#   pip install -r requirements.txt
+#
+# GPU support (optional):
+#   Replace the torch + torchaudio lines below, then run:
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+#   pip install -r requirements.txt
+#
+# FRONTEND (Node.js)
+# ------------------
+# Requires Node.js 18+ and npm
+#
+#   cd frontend
+#   npm install
+#   npm start          # dev server at http://localhost:3000 (proxies /api → :8000)
+#   npm run build      # production build → frontend/build/ (served by backend)
+#   npm run preview    # preview the production build locally
+#
+# RUNNING THE APP
+# ---------------
+# Start the backend (from instrument-detection/):
+#   uvicorn backend.app:app --reload --port 8000
+#
+# ============================================================
+
+# --- Web framework ---
+fastapi==0.128.0
+uvicorn==0.40.0
+python-multipart==0.0.21
+
+# --- ML / audio ---
+torch==2.9.1
+torchaudio==2.9.1
+numpy==2.3.5
+librosa==0.11.0
+scikit-learn==1.8.0
+
+# --- Data ---
+pandas==2.3.3
