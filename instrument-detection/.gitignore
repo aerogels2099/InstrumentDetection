@@ -16,6 +16,7 @@ data/
 
 # IDEs
 .vscode/
+.vs/
 .idea/
 
 # Node / frontend build
